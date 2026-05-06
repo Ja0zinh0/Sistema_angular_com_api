@@ -1,0 +1,31 @@
+<div class="container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Novo Produto</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="cadastrar()" #produtoForm="ngForm" class="form-container">
+        
+        <mat-form-field appearance="fill">
+          <mat-label>Nome do Produto</mat-label>
+          <input matInput [(ngModel)]="produto.nome" name="nome" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Preço (R$)</mat-label>
+          <input matInput type="number" [(ngModel)]="produto.preco" name="preco" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Descrição</mat-label>
+          <textarea matInput [(ngModel)]="produto.descricao" name="descricao" rows="4"></textarea>
+        </mat-form-field>
+
+        <div class="actions">
+          <button mat-raised-button color="primary" type="submit" [disabled]="!produtoForm.form.valid">Salvar</button>
+          <button mat-button type="button" (click)="cancelar()">Cancelar</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
