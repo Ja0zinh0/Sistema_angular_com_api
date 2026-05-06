@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { Produto } from '../../models/produto';
 import { ProdutoService } from '../../services/produto';
 
@@ -10,7 +11,7 @@ import { ProdutoService } from '../../services/produto';
 })
 export class ProdutoLista implements OnInit {
 
-  produtos: Produto[] = [];
+  produtos = new MatTableDataSource<Produto>();
   colunas: string[] = ['id', 'nome', 'preco', 'descricao'];
 
   constructor(private produtoService: ProdutoService) { }
@@ -21,7 +22,7 @@ export class ProdutoLista implements OnInit {
 
   carregarProdutos(): void {
     this.produtoService.getProdutos().subscribe(data => {
-      this.produtos = data;
+      this.produtos.data = data;
     });
   }
 }

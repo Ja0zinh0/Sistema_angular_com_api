@@ -3,14 +3,27 @@
     {
       "id": "1",
       "nome": "Teclado Mecânico Gamer",
-      "preco": 350.00,
+      "preco": 350,
       "descricao": "Teclado mecânico com switches azuis e iluminação RGB."
     },
     {
       "id": "2",
       "nome": "Mouse Gamer 16000 DPI",
-      "preco": 220.50,
+      "preco": 220.5,
       "descricao": "Mouse ergonômico com 6 botões programáveis."
+    },
+    {
+      "nome": "sei la ",
+      "preco": 500,
+      "descricao": "produto para vender \n",
+      "id": "QDZJDzaeJNI"
+    },
+    {
+      "nome": "monitor ",
+      "preco": 2000,
+      "descricao": "produto que sei la da para ver imagem \n",
+      "id": "iP7r4n7AgZ4"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
