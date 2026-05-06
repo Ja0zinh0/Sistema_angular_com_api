@@ -1,0 +1,5 @@
+# Agent files
+.tmp/
+.env
+credentials.json
+token.json

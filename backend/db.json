@@ -1,0 +1,16 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Teclado Mecânico Gamer",
+      "preco": 350.00,
+      "descricao": "Teclado mecânico com switches azuis e iluminação RGB."
+    },
+    {
+      "id": "2",
+      "nome": "Mouse Gamer 16000 DPI",
+      "preco": 220.50,
+      "descricao": "Mouse ergonômico com 6 botões programáveis."
+    }
+  ]
+}
